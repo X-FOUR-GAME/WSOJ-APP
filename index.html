@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下载 WSOJ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        .oj-icon {
+            font-size: 60px;  /* 稍微增大字体 */
+            font-weight: 800;
+            color: #764ba2;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 10px;
+            border: 3px solid rgba(102, 126, 234, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .file-info {
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: left;
+            border-left: 5px solid #667eea;
+        }
+
+        .file-info h3 {
+            color: #444;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .file-info h3 i {
+            margin-right: 10px;
+            color: #667eea;
+        }
+
+        .info-item {
+            margin: 8px 0;
+            display: flex;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #555;
+            min-width: 100px;
+        }
+
+        .info-value {
+            color: #333;
+            word-break: break-all;
+        }
+
+        .download-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            color: white;
+            padding: 18px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .download-btn:active {
+            transform: translateY(0);
+        }
+
+        .download-btn i {
+            margin-right: 10px;
+            font-size: 22px;
+        }
+
+        .instructions {
+            background-color: #e8f4ff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: left;
+        }
+
+        .instructions h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .instructions h3 i {
+            margin-right: 10px;
+        }
+
+        .instructions ol {
+            padding-left: 20px;
+            color: #444;
+        }
+
+        .instructions li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            .oj-icon {
+                font-size: 50px;
+            }
+
+            .download-btn {
+                width: 100%;
+                padding: 16px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <div class="oj-icon">OJ</div>
+    </div>
+
+    <h1>WSOJ 应用程序</h1>
+    <p class="description">
+        点击下方按钮下载最新的 WSOJ 应用程序压缩包。该文件包含完整的应用程序，下载后解压即可使用。
+    </p>
+
+    <div class="file-info">
+        <h3><i class="fas fa-file-archive"></i> 文件信息</h3>
+        <div class="info-item">
+            <span class="info-label">文件名：</span>
+            <span class="info-value">WSOJ.zip</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">文件路径：</span>
+            <span class="info-value">\WSOJ-APP\app\WSOJ.zip</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">文件类型：</span>
+            <span class="info-value">ZIP 压缩文件</span>
+        </div>
+        <div class="info-item">
+            <span class="info-label">用途：</span>
+            <span class="info-value">WSOJ 应用程序安装包</span>
+        </div>
+    </div>
+
+    <a href="./app/FLY LEAF.zip" class="download-btn" id="downloadBtn">
+        <i class="fas fa-download"></i> 下载 WSOJ
+    </a>
+
+    <div class="instructions">
+        <h3><i class="fas fa-info-circle"></i> 使用说明</h3>
+        <ol>
+            <li>点击上方按钮下载 "WSOJ.zip" 文件</li>
+            <li>下载完成后，找到文件保存位置</li>
+            <li>右键点击 ZIP 文件，选择 "解压到当前文件夹" 或使用解压软件解压</li>
+            <li>打开解压后的文件夹，找到并运行应用程序</li>
+            <li>如果遇到问题，请确保您的系统已安装必要的运行环境</li>
+        </ol>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 四次方游戏科技有限公司 </p>
+        <p>如有问题，请联系技术支持</p>
+    </div>
+</div>
+
+<script>
+    // 添加下载按钮点击事件
+    document.getElementById('downloadBtn').addEventListener('click', function(e) {
+        // 可以在这里添加下载统计或确认提示
+        console.log('开始下载 FLY LEAF.zip 文件');
+
+        // 可选：显示下载提示
+        const originalText = this.innerHTML;
+        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 正在下载...';
+        this.style.pointerEvents = 'none';
+
+        // 3秒后恢复按钮状态
+        setTimeout(() => {
+            this.innerHTML = originalText;
+            this.style.pointerEvents = 'auto';
+        }, 3000);
+    });
+
+    // 自动检测文件是否存在（可选功能）
+    window.addEventListener('load', function() {
+        // 在实际应用中，这里可以添加检查文件是否存在的代码
+        // 例如通过 fetch 请求检查文件是否可访问
+        console.log('页面加载完成，文件路径: /FLY-LEAF-APP/app/FLY LEAF.zip');
+    });
+</script>
+</body>
+</html>
